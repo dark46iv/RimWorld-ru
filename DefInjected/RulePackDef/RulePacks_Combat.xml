@@ -24,6 +24,10 @@
     <li>scraped_past->slid</li>
   -->
   <Combat_Deflect.rulePack.rulesStrings>
+    <!-- Включает
+    Combat_MeleeIncludes
+    Combat_DeflectIncludes
+     -->
     <li>r_logentry(p=1)->[INITIATOR_definite] [deflectedadverb] [damaged] [recipient_part0_label] [RECIPIENT_definite].</li>
     <li>r_logentry(p=1)->[INITIATOR_definite] [damaged] [recipient_part0_label] [RECIPIENT_definite], [deflectedconsequence].</li>
     <li>r_logentry(p=0.3)->[INITIATOR_definite], [expertly] держа в руках [WEAPON_label], [deflectedadverb] [damaged] [recipient_part0_label] [RECIPIENT_definite].</li>
@@ -81,6 +85,9 @@
     <li>result->but the attack was cleverly avoided</li>
   -->
   <Combat_Dodge.rulePack.rulesStrings>
+    <!--Включает
+    Combat_MeleeIncludes
+    Combat_FailIncludes -->
     <li>r_logentry(p=0.2)->[RECIPIENT_definite] уворачивается от [maneuver_noun_gen] [implement] [INITIATOR_definite].</li>
     <li>r_logentry(p=0.2)->[RECIPIENT_definite] уворачивается от [maneuver_noun_gen].</li>
     
@@ -122,6 +129,10 @@
     <li>fromof->of</li>
   -->
   <Combat_ExplosionImpact.rulePack.rulesStrings>
+    <!-- Включает
+    Combat_WoundIncludes
+    Combat_MeleeIncludes
+    Combat_MeleeDamageIncludes  -->
     <li>prefix(p=2)->[blast] [WEAPON_projectile_label] [INITIATOR_definite]</li>
     <li>prefix(p=2)->[blast] [WEAPON_label] [INITIATOR_definite]</li>
     <li>prefix->[WEAPON_projectile_label] [INITIATOR_definite]</li>
@@ -202,6 +213,10 @@
     <li>action(p=0.6)->[INITIATOR_definite] [damaged_past] [RECIPIENT_definite]</li>
   -->
   <Combat_Hit.rulePack.rulesStrings>
+    <!-- Включает
+    Combat_MeleeIncludes
+    Combat_MeleeDamageIncludes
+    Combat_WoundIncludes -->
     <li>r_logentry(p=0.3)->[INITIATOR_definite] [damaged] [recipient_part0_label] [RECIPIENT_definite].</li>
     <li>r_logentry(p=0.1)->[INITIATOR_definite] [flavortextadverb] [damaged] [recipient_part0_label] [RECIPIENT_definite].</li>
     <li>r_logentry(p=0.1)->[INITIATOR_definite][flavortextsituation] [damaged] [recipient_part0_label] [RECIPIENT_definite].</li>
@@ -422,6 +437,9 @@
     <li>result(initiator_flesh!=Mechanoid)->but hesitated at the last second</li>
   -->
   <Combat_Miss.rulePack.rulesStrings>
+    <!-- Включает
+    Combat_MeleeIncludes
+    Combat_FailIncludes -->
     <li>r_logentry(p=0.2)->[RECIPIENT_definite] избегает [maneuver_noun_gen] [WEAPON_label] [INITIATOR_definite].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_definite] промахивается по [RECIPIENT_definite] [maneuver_noun_instr] [implement].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_definite] [failtype], пытаясь [damaged_inf] [RECIPIENT_definite] при помощи [implement].</li>
@@ -503,6 +521,8 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDamage.rulePack.rulesStrings>
+    <!-- Включает
+    Combat_WoundIncludes -->
     <li>r_logentry->[WEAPON_projectile_label] [INITIATOR_definite] [destroyed] [destroyed_targets] у [RECIPIENT_definite].</li>
     <li>r_logentry->[WEAPON_projectile_label] [INITIATOR_definite] [destroyed] [destroyed_targets] [RECIPIENT_definite] [destroyed_suffix].</li>
     <li>r_logentry->[WEAPON_projectile_label] [INITIATOR_definite] [expertly] [destroyed] [destroyed_targets] [RECIPIENT_definite].</li>
@@ -605,6 +625,8 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDeflect.rulePack.rulesStrings>
+    <!-- Включает
+    Combat_DeflectIncludes -->
     <li>r_logentry->[WEAPON_projectile_label] [INITIATOR_definite] попадает в [damaged_targets] [RECIPIENT_definite], [deflectedconsequence_projectile].</li>
     <li>r_logentry->[WEAPON_projectile_label] [INITIATOR_definite] попадает в [damaged_targets] [RECIPIENT_definite] [deflectedadverb].</li>
     <li>r_logentry(p=2)->[WEAPON_projectile_label] [INITIATOR_definite] [projectile_missed] [ORIGINALTARGET_definite] и попадает в [damaged_target_possessive_opt], [deflectedconsequence_projectile].</li>
@@ -771,15 +793,17 @@
     
     <li>threw(p=2)->[threwverb]</li>
     <li>threw->[threwadverb] [threwverb]</li>
+    
     <li>threwverb->кидает</li>
     <li>threwverb->бросает</li>
     <li>threwverb->швыряет</li>
+    <li>threwverb->метает</li>
     
     <li>threwadverb->аккуратно</li>
     <li>threwadverb->быстро</li>
     <li>threwadverb->метко</li>
     <li>threwadverb->решительно</li>
-    <li>threwadverb(initiator_flesh!=Mechanoid)->робко</li>
+    <li>threwadverb(initiator_flesh!=Mechanoid)->осторожно</li>
     <li>threwadverb->точно</li>
     <li>threwadverb(initiator_flesh!=Mechanoid)->с опаской</li>
   </Combat_RangedFire_Thrown.rulePack.rulesStrings>
