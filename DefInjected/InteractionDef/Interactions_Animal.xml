@@ -159,7 +159,7 @@
     <li>trained_animal(p=2)->[tried] тренировать [RECIPIENT_nameDef]</li>
     <li>trained_animal(p=4)->[tried] [training_way] [to_train] [RECIPIENT_nameDef] [train_target]</li>
     <li>trained_animal->[tried] вышколить [RECIPIENT_nameDef]</li>
-    <li>trained_animal->[tried] заставить [RECIPIENT_nameDef] заниматься новой для [RECIPIENT_possessive] задачей</li>
+    <li>trained_animal->[tried] заставить [RECIPIENT_nameDef] заниматься новой для н[RECIPIENT_possessive] задачей</li>
     <li>training_way(p=2)-></li>
     <li>training_way->на собственном примере</li>
     <li>training_way->методом кнута и пряника</li>
