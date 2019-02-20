@@ -41,6 +41,7 @@
     <li>deflectedconsequence->но [TOOL_label] лишь [scraped] [RECIPIENT_possessive] броню</li>
     <li>deflectedconsequence->но [TOOL_label] лишь оставляет [scratch] на [RECIPIENT_possessive] броне</li>
     <li>deflectedconsequence->но [TOOL_label] лишь соскальзывает с [RECIPIENT_possessive] брони</li>
+    <li>deflectedconsequence->но [TOOL_label] тест [RECIPIENT_possessive] брони</li>
   </Combat_Deflect.rulePack.rulesStrings>
   
   <!-- EN:
